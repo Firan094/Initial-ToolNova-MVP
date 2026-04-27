@@ -360,7 +360,7 @@ const guides = [
     intro: "Students need tools that save time without destroying real learning. This guide focuses on practical tools that help with studying, note-taking, writing, and organization.",
     sections: [
       { heading: "1. Use AI for structure, not cheating", body: "Use tools to summarize notes, explain hard concepts, and generate study plans. Do not outsource your brain entirely unless your life goal is becoming a confused parrot." },
-      { heading: "2. Best starter stack", body: "A simple stack could include ChatGPT for explanations, Notion AI for notes, and Grammarly for polishing writing." },
+      { heading: "2. Best starter stack", body: "A simple stack could include ChatGPT for explanations, Notion AI for notes, Grammarly for polishing writing, and Slidesgo for presentations." },
       { heading: "3. Avoid common mistakes", body: "Always verify information, write in your own words, and use AI as a helper rather than a ghost student." }
     ]
   },
@@ -371,7 +371,7 @@ const guides = [
     description: "Build a simple portfolio, write better proposals, find first clients, and use AI without looking fake.",
     intro: "Freelancing does not begin with confidence. It begins with a profile, a simple offer, and enough stubbornness to keep sending proposals.",
     sections: [
-      { heading: "1. Start with one clear offer", body: "Choose one service such as simple websites, thumbnail design, captioning, or CV formatting." },
+      { heading: "1. Start with one clear offer", body: "Choose one service such as simple websites, thumbnail design, captioning, CV formatting, or landing page setup." },
       { heading: "2. Build proof fast", body: "Create 2–3 sample works even if nobody paid you yet. Evidence beats potential." },
       { heading: "3. Use AI carefully", body: "AI can help draft proposals and organize ideas, but your pitch must still sound human and specific." }
     ]
@@ -383,7 +383,7 @@ const guides = [
     description: "Tools for scripting, captions, thumbnails, editing, repurposing, and publishing faster.",
     intro: "Video creators need speed. The goal is not to worship software. The goal is to get more good content published with less pain.",
     sections: [
-      { heading: "1. Script and idea tools", body: "Use ChatGPT or Gemini for titles, concepts, and shot lists." },
+      { heading: "1. Script and idea tools", body: "Use ChatGPT or Gemini for titles, concepts, hooks, and shot lists." },
       { heading: "2. Editing and captions", body: "CapCut is strong for quick edits and caption workflows. Canva helps with thumbnails and simple visuals." },
       { heading: "3. Workflow rule", body: "Faster is good. Faster ugly is still ugly. Quality matters." }
     ]
@@ -422,6 +422,78 @@ const guides = [
       { heading: "1. Upfront payment red flag", body: "If someone asks you to pay to get work, stop and inspect the trap." },
       { heading: "2. Impossible income claims", body: "Guaranteed income, secret methods, and magic systems are scam perfume." },
       { heading: "3. Protect yourself", body: "Use trusted platforms, verify people, and never rush because of fake urgency." }
+    ]
+  },
+  {
+    slug: "best-ai-tools-for-freelancers",
+    title: "Best AI tools for freelancers who want to work faster",
+    tag: "Freelancing",
+    description: "A practical tool stack for proposals, client communication, research, writing, design, and project delivery.",
+    intro: "Freelancers need tools that reduce friction: finding ideas, writing proposals, communicating clearly, delivering faster, and staying organized.",
+    sections: [
+      { heading: "1. Proposal and writing tools", body: "Use ChatGPT, Grammarly, or QuillBot to draft cleaner proposals and improve client messages." },
+      { heading: "2. Design and delivery tools", body: "Use Canva, Figma, Loom, and Trello to create assets, explain work, and manage projects." },
+      { heading: "3. The warning", body: "AI can make you faster, but it cannot replace taste, reliability, and client trust. Those still come from you." }
+    ]
+  },
+  {
+    slug: "how-to-choose-ai-tools",
+    title: "How to choose the right AI tool without wasting money",
+    tag: "AI Tools",
+    description: "A simple framework for comparing AI tools by goal, price, workflow fit, learning curve, and real value.",
+    intro: "Most people choose tools backwards: they see hype first, then invent a reason to buy. That is how subscription graveyards are born.",
+    sections: [
+      { heading: "1. Start with the job", body: "Before choosing a tool, define the task: writing, research, coding, design, automation, editing, or organization." },
+      { heading: "2. Test the free plan first", body: "Use the free version or trial before paying. If it does not save time in one week, it probably is not urgent." },
+      { heading: "3. Compare total cost", body: "Look at monthly price, usage limits, learning curve, and whether it replaces another tool." }
+    ]
+  },
+  {
+    slug: "ai-tools-for-content-writing",
+    title: "AI tools for content writing: useful stack for beginners",
+    tag: "Writing",
+    description: "Use AI to brainstorm topics, outline posts, improve drafts, rewrite weak sections, and publish clearer content.",
+    intro: "AI writing tools are best when they help you think, structure, and edit. They are worst when they generate empty soup with keywords sprinkled on top.",
+    sections: [
+      { heading: "1. Use AI for outlines", body: "Ask for structures, angles, examples, and missing sections before writing." },
+      { heading: "2. Edit with purpose", body: "Use Grammarly or QuillBot to improve clarity, but keep your own voice." },
+      { heading: "3. Add real insight", body: "Generic content does not rank or convert. Add examples, experience, screenshots, or a strong opinion." }
+    ]
+  },
+  {
+    slug: "ai-productivity-workflow",
+    title: "A simple AI productivity workflow for daily work",
+    tag: "Productivity",
+    description: "Plan your day, summarize notes, write faster, automate repetitive tasks, and reduce mental clutter.",
+    intro: "Productivity is not about collecting apps like digital Pokémon. It is about reducing friction between intention and execution.",
+    sections: [
+      { heading: "1. Plan the day", body: "Use an AI assistant to turn messy tasks into a ranked daily plan." },
+      { heading: "2. Capture and summarize", body: "Use Notion AI, Otter.ai, or ChatGPT to clean up meeting notes, ideas, and research." },
+      { heading: "3. Automate repeat work", body: "Use Zapier or simple templates for repetitive tasks. Boring work should not get VIP treatment." }
+    ]
+  },
+  {
+    slug: "best-ai-tools-for-designers",
+    title: "Best AI tools for designers and visual creators",
+    tag: "Design",
+    description: "Tools for moodboards, image generation, UI design, thumbnails, brand assets, and faster design exploration.",
+    intro: "Designers can use AI for exploration, references, layouts, and asset generation. The human still decides taste. AI has many pixels, not judgment.",
+    sections: [
+      { heading: "1. Generate ideas fast", body: "Use Midjourney or Leonardo AI for moodboards, visual directions, and concept exploration." },
+      { heading: "2. Build usable interfaces", body: "Use Figma for real UI design and prototyping. AI images are not a product interface by themselves." },
+      { heading: "3. Finish with human taste", body: "AI helps create options, but final selection, spacing, hierarchy, and polish require human judgment." }
+    ]
+  },
+  {
+    slug: "build-a-website-with-no-code-and-ai",
+    title: "How to build a simple website with no-code and AI",
+    tag: "Websites",
+    description: "Plan pages, write copy, create visuals, organize sections, and launch a simple website with low cost.",
+    intro: "A simple website does not need a giant budget. It needs clear positioning, useful content, trust signals, and a working deployment.",
+    sections: [
+      { heading: "1. Decide the purpose", body: "A website should collect leads, explain a service, sell a product, or build trust. Decoration is not a business model." },
+      { heading: "2. Create the first pages", body: "Start with Home, About, Contact, Privacy, Terms, and one useful content section." },
+      { heading: "3. Launch before perfection", body: "Deploy the first version, test on mobile, fix obvious issues, then improve with traffic feedback." }
     ]
   }
 ];
