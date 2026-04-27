@@ -441,7 +441,35 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: 1fr 220px 190px;
   gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.filter-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 1.4rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.filter-summary p {
+  margin: 0;
+  color: var(--text-soft);
+  font-weight: 700;
+}
+
+.filter-summary button {
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  background: rgba(34, 211, 238, 0.08);
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 0.55rem 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
 }
 .filters select {
   color: var(--text);
@@ -616,4 +644,49 @@ h1, h2, h3 {
     width: min(100% - 20px, 1180px);
   }
   .brand-text { font-size: 1.15rem; }
+}
+
+/* Patch 8: Tools filter polish */
+.filters {
+  margin-bottom: 0.8rem;
+}
+
+.filter-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.filter-summary p {
+  margin: 0;
+  color: var(--text-soft);
+  font-weight: 700;
+}
+
+.filter-summary button {
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  background: rgba(34, 211, 238, 0.08);
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 0.55rem 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.filter-summary button:hover {
+  border-color: rgba(34, 211, 238, 0.55);
+  background: rgba(34, 211, 238, 0.14);
+}
+
+@media (max-width: 900px) {
+  .filter-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

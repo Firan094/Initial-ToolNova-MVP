@@ -30,7 +30,7 @@
 
     <section class="directory-panel">
       <div class="filters">
-        <input id="toolSearch" type="search" placeholder="Search tools..." aria-label="Search tools">
+<input id="toolSearch" type="search" placeholder="Search tools, creators, writing, coding..." aria-label="Search tools">
         <select id="categoryFilter" aria-label="Filter by category">
           <option value="All">All categories</option>
         </select>
@@ -40,6 +40,11 @@
           <option value="Freemium">Freemium</option>
           <option value="Paid">Paid</option>
         </select>
+      </div>
+
+      <div class="filter-summary">
+        <p id="toolResultCount">Showing all tools</p>
+        <button type="button" id="clearFilters">Clear filters</button>
       </div>
 
       <div class="tool-grid" data-tools-list></div>

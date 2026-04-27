@@ -108,19 +108,41 @@ function renderToolsList() {
     return matchesQuery && matchesCategory && matchesPrice;
   });
 
+  const resultCount = document.querySelector("#toolResultCount");
+  if (resultCount) {
+    const toolLabel = filtered.length === 1 ? "tool" : "tools";
+    const categoryText = selectedCategory === "All" ? "all categories" : selectedCategory;
+    const priceText = selectedPrice === "All" ? "all pricing" : selectedPrice;
+
+    resultCount.textContent = `Showing ${filtered.length} ${toolLabel} • ${categoryText} • ${priceText}`;
+  }
+
   target.innerHTML = filtered.length
     ? filtered.map(toolCard).join("")
     : `<div class="content-card"><h2>No tools found</h2><p>Try a different search or category. Even Google needs a second chance sometimes.</p></div>`;
 }
 
 function setupToolFilters() {
-  const inputs = ["#toolSearch", "#categoryFilter", "#priceFilter"]
-    .map((selector) => document.querySelector(selector))
-    .filter(Boolean);
+  const search = document.querySelector("#toolSearch");
+  const category = document.querySelector("#categoryFilter");
+  const price = document.querySelector("#priceFilter");
+  const clearButton = document.querySelector("#clearFilters");
+
+  const inputs = [search, category, price].filter(Boolean);
 
   if (!inputs.length) return;
+
   inputs.forEach((input) => input.addEventListener("input", renderToolsList));
   inputs.forEach((input) => input.addEventListener("change", renderToolsList));
+
+  if (clearButton) {
+    clearButton.addEventListener("click", () => {
+      if (search) search.value = "";
+      if (category) category.value = "All";
+      if (price) price.value = "All";
+      renderToolsList();
+    });
+  }
 }
 
 function renderGuides() {
