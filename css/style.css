@@ -447,7 +447,15 @@ h1, h2, h3 {
   color: var(--text);
   background-color: var(--surface);
 }
-.article-card { min-height: 210px; }
+.article-card {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card .text-link {
+  margin-top: auto;
+}
 .article-card .tag { color: var(--primary); font-weight: 800; font-size: 0.82rem; }
 
 .calculator-card { display: grid; gap: 0.8rem; }

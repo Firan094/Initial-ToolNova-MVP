@@ -65,7 +65,7 @@ function renderFeaturedTools() {
 function renderHomeGuides() {
   const target = document.querySelector("[data-home-guides]");
   if (!target || typeof guides === "undefined") return;
-  target.innerHTML = guides.slice(0, 3).map(guideCard).join("");
+  target.innerHTML = guides.slice(0, 6).map(guideCard).join("");
 }
 
 function populateFilters() {
