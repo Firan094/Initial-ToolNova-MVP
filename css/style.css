@@ -747,3 +747,76 @@ h1, h2, h3 {
   border-color: rgba(34, 211, 238, 0.55);
   background: rgba(34, 211, 238, 0.13);
 }
+
+/* Patch 10: Contact service funnel */
+.service-package {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.service-package h3 {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+
+.service-package ul {
+  margin: 0.8rem 0;
+  padding-left: 1.2rem;
+  color: var(--text-soft);
+}
+
+.service-package li {
+  margin: 0.35rem 0;
+}
+
+.service-package strong {
+  color: var(--primary);
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.highlight-box {
+  border-color: rgba(34, 211, 238, 0.35);
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(34, 197, 94, 0.05));
+}
+
+/* Patch 11: Homepage service CTA polish */
+.enhanced-service-strip {
+  align-items: stretch;
+}
+
+.service-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.service-mini-grid div {
+  padding: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.service-mini-grid strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--primary);
+}
+
+.service-mini-grid span {
+  display: block;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .service-mini-grid {
+    grid-template-columns: 1fr;
+  }
+}
