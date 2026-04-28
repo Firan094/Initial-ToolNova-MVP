@@ -22,24 +22,53 @@ function articleUrl(guide) {
 }
 
 function toolCard(tool) {
+  const score = Number(tool.rating);
+  const trustNote = score >= 4.6
+    ? "Strong pick"
+    : score >= 4.3
+      ? "Worth testing"
+      : "Use-case dependent";
+
+  const pricingNote = tool.pricing === "Paid"
+    ? "Paid tool — test fit first"
+    : tool.pricing === "Free"
+      ? "Free option available"
+      : "Free plan available";
+
   return `
     <article class="tool-card">
       <div class="tool-top">
         <div class="tool-logo">${tool.initials}</div>
         <div>
           <h3>${tool.name}</h3>
-          <p>${tool.description}</p>
+          <p class="tool-desc">${tool.description}</p>
         </div>
       </div>
+
       <div class="tool-meta">
         <span class="badge">${tool.category}</span>
         <span class="badge ${priceClass(tool.pricing)}">${tool.pricing}</span>
         <span class="badge rating">★ ${tool.rating}</span>
       </div>
-      <p><strong>Best for:</strong> ${tool.bestFor}</p>
+
+      <div class="tool-insights">
+        <div>
+          <span>Best for</span>
+          <strong>${tool.bestFor}</strong>
+        </div>
+        <div>
+          <span>Pricing note</span>
+          <strong>${pricingNote}</strong>
+        </div>
+        <div>
+          <span>ToolNova verdict</span>
+          <strong>${trustNote}</strong>
+        </div>
+      </div>
+
       <div class="tool-actions">
-        <a href="${toolUrl(tool)}" aria-label="View ${tool.name} details">View details →</a>
-        <a href="affiliate-disclosure.html">Disclosure</a>
+        <a class="tool-link primary-tool-link" href="${toolUrl(tool)}" aria-label="View ${tool.name} details">View details →</a>
+        <a class="tool-link" href="affiliate-disclosure.html">Disclosure</a>
       </div>
     </article>
   `;
