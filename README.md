@@ -37,3 +37,13 @@ toolnova-mvp/
 │  └─ calculators.js
 └─ assets/
    └─ favicon.svg
+
+   ## Ownership and repository rule
+
+This repository contains the ToolNova project source code and should remain private during the early launch phase.
+
+Public sharing link:
+
+https://toolnova.pages.dev/
+
+Do not share the GitHub repository link publicly.

@@ -185,3 +185,22 @@ Bad:
 
 Better:
 "I collected useful AI tools for students and freelancers. Here is the list."
+
+## Private beta sharing rule
+
+During early testing, share ToolNova only with trusted people first.
+
+Message rule:
+
+"Please check this early version and give honest feedback. Don’t share publicly yet."
+
+Do not share:
+
+- GitHub repository link
+- source code
+- internal setup files
+- screenshots of private dashboard settings
+
+Share only:
+
+https://toolnova.pages.dev/
