@@ -894,3 +894,61 @@ h1, h2, h3 {
   font-size: 0.72rem;
   text-shadow: 0 0 14px rgba(34, 197, 94, 0.8);
 }
+
+/* Patch 19: First client offer section */
+.first-offer-box {
+  border-color: rgba(34, 197, 94, 0.28);
+  background:
+    radial-gradient(circle at 90% 10%, rgba(34, 197, 94, 0.12), transparent 30%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin: 1.1rem 0;
+}
+
+.offer-grid div {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(5, 10, 20, 0.32);
+}
+
+.offer-grid h3 {
+  margin: 0 0 0.45rem;
+  color: var(--text);
+}
+
+.offer-grid p {
+  margin: 0 0 0.75rem;
+}
+
+.offer-grid span {
+  display: inline-flex;
+  padding: 0.42rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.22);
+  color: var(--success);
+  font-weight: 800;
+  font-size: 0.82rem;
+}
+
+.offer-note {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  background: rgba(245, 158, 11, 0.06);
+  color: var(--text-soft);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+}
