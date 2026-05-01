@@ -995,3 +995,49 @@ h1, h2, h3 {
   opacity: 0.78;
   cursor: not-allowed;
 }
+
+/* Patch 21: Calculator explanation polish */
+.calculator-help-section {
+  margin-top: 2rem;
+}
+
+.calculator-help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.calculator-help-grid div {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.calculator-help-grid h3 {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+
+.calculator-help-grid p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.calculator-note {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: var(--radius-md);
+  background: rgba(245, 158, 11, 0.06);
+  color: var(--text-soft);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .calculator-help-grid {
+    grid-template-columns: 1fr;
+  }
+}
