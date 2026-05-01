@@ -952,3 +952,46 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Patch 20: Tool detail content depth polish */
+.detail-section {
+  padding-bottom: 1.05rem;
+  margin-bottom: 1.05rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.detail-section:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.detail-section h2 {
+  margin-top: 0;
+}
+
+.numbered-list {
+  padding-left: 1.35rem;
+}
+
+.numbered-list li::marker {
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.info-box small {
+  display: block;
+  margin-top: 0.55rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.verdict-box {
+  border-color: rgba(34, 211, 238, 0.28);
+  background: rgba(34, 211, 238, 0.055);
+}
+
+.is-disabled {
+  opacity: 0.78;
+  cursor: not-allowed;
+}

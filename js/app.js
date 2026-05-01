@@ -188,6 +188,32 @@ function renderToolDetail() {
   const slug = params.get("slug");
   const tool = tools.find((item) => item.slug === slug) || tools[0];
 
+  const score = Number(tool.rating);
+  const trustVerdict = score >= 4.6
+    ? "Strong pick for most people in this use case."
+    : score >= 4.3
+      ? "Worth testing before paying for a full plan."
+      : "Useful for the right person, but compare alternatives first.";
+
+  const pricingAdvice = tool.pricing === "Paid"
+    ? "This is a paid tool. Test the workflow fit before spending money."
+    : tool.pricing === "Free"
+      ? "This can be a good low-risk starting point because a free option is available."
+      : "Start with the free plan, then upgrade only if it saves real time.";
+
+  const audienceText = `Best for people who need help with ${tool.bestFor.toLowerCase()} and want a practical tool instead of another shiny distraction.`;
+
+  const avoidText = tool.pricing === "Paid"
+    ? "Avoid paying immediately if you are not sure this tool solves a real problem for you."
+    : "Avoid it if you only want to collect tools but do not have a clear task to complete.";
+
+  const workflowSteps = [
+    `Define one task: ${tool.bestFor}.`,
+    "Test the tool with a small real project.",
+    "Compare the result with your current workflow.",
+    "Keep it only if it saves time, improves quality, or reduces stress."
+  ];
+
   document.title = `${tool.name} — ToolNova`;
 
   target.innerHTML = `
@@ -195,38 +221,88 @@ function renderToolDetail() {
       <p class="eyebrow"><span></span> Tool review</p>
       <h1>${tool.name}</h1>
       <p>${tool.longDescription}</p>
+
       <div class="tool-meta">
         <span class="badge">${tool.category}</span>
         <span class="badge ${priceClass(tool.pricing)}">${tool.pricing}</span>
         <span class="badge rating">★ ${tool.rating}</span>
       </div>
     </div>
+
     <div class="detail-grid">
       <div class="detail-panel">
-        <h2>What it is best for</h2>
-        <p><strong>${tool.bestFor}</strong></p>
-        <h3>Why people use it</h3>
-        <ul class="detail-list">${tool.pros.map((item) => `<li>${item}</li>`).join("")}</ul>
-        <h3>Things to watch</h3>
-        <ul class="detail-list">${tool.cons.map((item) => `<li>${item}</li>`).join("")}</ul>
+        <section class="detail-section">
+          <h2>What it is best for</h2>
+          <p><strong>${tool.bestFor}</strong></p>
+          <p>${audienceText}</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Who should use this tool?</h2>
+          <p>
+            Use ${tool.name} if your main goal fits this category:
+            <strong>${tool.category}</strong>. It is especially useful when you need a faster,
+            cleaner, or more organized way to handle ${tool.bestFor.toLowerCase()}.
+          </p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Why people use it</h2>
+          <ul class="detail-list">
+            ${tool.pros.map((item) => `<li>${item}</li>`).join("")}
+          </ul>
+        </section>
+
+        <section class="detail-section">
+          <h2>Things to watch</h2>
+          <ul class="detail-list">
+            ${tool.cons.map((item) => `<li>${item}</li>`).join("")}
+          </ul>
+        </section>
+
+        <section class="detail-section">
+          <h2>Avoid this tool if...</h2>
+          <p>${avoidText}</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Quick workflow</h2>
+          <ol class="detail-list numbered-list">
+            ${workflowSteps.map((item) => `<li>${item}</li>`).join("")}
+          </ol>
+        </section>
       </div>
+
       <aside class="detail-aside">
         <div class="info-stack">
           <div class="info-box">
             <h3>Pricing</h3>
             <p>${tool.pricing}</p>
+            <small>${pricingAdvice}</small>
           </div>
+
           <div class="info-box">
             <h3>Best for</h3>
             <p>${tool.bestFor}</p>
           </div>
+
+          <div class="info-box verdict-box">
+            <h3>ToolNova verdict</h3>
+            <p>${trustVerdict}</p>
+          </div>
+
           <div class="info-box">
-            <h3>Verdict</h3>
-            <p>Good option if this matches your use case. Do not buy software out of boredom.</p>
+            <h3>Before you pay</h3>
+            <p>Ask: does this tool save time, improve output, or help me earn more? If not, keep your money. It has suffered enough.</p>
           </div>
         </div>
+
         <div class="detail-actions">
-          <a class="btn btn-primary" href="${tool.link}">Visit tool</a>
+          ${
+            tool.link === "#"
+              ? `<a class="btn btn-primary is-disabled" href="tools.html">Official link coming soon</a>`
+              : `<a class="btn btn-primary" href="${tool.link}" target="_blank" rel="noopener">Visit tool</a>`
+          }
           <a class="btn btn-secondary" href="tools.html">Back to tools</a>
         </div>
       </aside>
