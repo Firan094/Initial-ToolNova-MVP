@@ -1,3 +1,39 @@
+function setPageSeo({ title, description, url }) {
+  if (title) {
+    document.title = title;
+  }
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription && description) {
+    metaDescription.setAttribute("content", description);
+  }
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle && title) {
+    ogTitle.setAttribute("content", title);
+  }
+
+  const ogDescription = document.querySelector('meta[property="og:description"]');
+  if (ogDescription && description) {
+    ogDescription.setAttribute("content", description);
+  }
+
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  if (ogUrl && url) {
+    ogUrl.setAttribute("content", url);
+  }
+
+  const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+  if (twitterTitle && title) {
+    twitterTitle.setAttribute("content", title);
+  }
+
+  const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+  if (twitterDescription && description) {
+    twitterDescription.setAttribute("content", description);
+  }
+}
+
 function setupNav() {
   const toggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-nav]");
@@ -213,9 +249,12 @@ function renderToolDetail() {
     "Compare the result with your current workflow.",
     "Keep it only if it saves time, improves quality, or reduces stress."
   ];
-
-  document.title = `${tool.name} — ToolNova`;
-
+  setPageSeo({
+    title: `${tool.name} Review — ToolNova`,
+    description: `${tool.name} review: best for ${tool.bestFor}. See pricing notes, pros, cons, quick workflow, and ToolNova verdict.`,
+    url: window.location.href
+  });
+  
   target.innerHTML = `
     <div class="detail-hero">
       <p class="eyebrow"><span></span> Tool review</p>
@@ -318,44 +357,79 @@ function renderArticleDetail() {
   const slug = params.get("slug");
   const guide = guides.find((item) => item.slug === slug) || guides[0];
 
-  document.title = `${guide.title} — ToolNova`;
+  const readingMinutes = Math.max(3, Math.ceil((guide.sections.length * 120) / 200));
+
+  setPageSeo({
+    title: `${guide.title} — ToolNova Guide`,
+    description: guide.description,
+    url: window.location.href
+  });
 
   target.innerHTML = `
-    <div class="detail-hero">
-      <p class="eyebrow"><span></span> ${guide.tag}</p>
-      <h1>${guide.title}</h1>
-      <p>${guide.intro}</p>
-    </div>
-    <div class="detail-grid">
-      <div class="detail-panel">
-        ${guide.sections.map((section) => `
-          <section>
-            <h2>${section.heading}</h2>
-            <p>${section.body}</p>
-          </section>
-        `).join("")}
-      </div>
-      <aside class="detail-aside">
-        <div class="info-stack">
-          <div class="info-box">
-            <h3>Quick summary</h3>
+    <article class="article-detail-shell">
+      <header class="article-detail-hero">
+        <p class="eyebrow"><span></span> ${guide.tag} guide</p>
+        <h1>${guide.title}</h1>
+        <p>${guide.intro}</p>
+
+        <div class="article-meta-row">
+          <span>${readingMinutes} min read</span>
+          <span>${guide.sections.length} key sections</span>
+          <span>Practical guide</span>
+        </div>
+      </header>
+
+      <div class="article-detail-grid">
+        <div class="article-main">
+          <section class="article-summary-box">
+            <h2>Quick summary</h2>
             <p>${guide.description}</p>
-          </div>
-          <div class="info-box">
-            <h3>Next step</h3>
-            <p>Use the tools directory to apply the guide with real tools.</p>
-          </div>
-          <div class="info-box">
-            <h3>Suggested path</h3>
-            <p>Read guide → choose tool → apply workflow → improve outcome.</p>
-          </div>
+          </section>
+
+          ${guide.sections.map((section) => `
+            <section class="article-section">
+              <h2>${section.heading}</h2>
+              <p>${section.body}</p>
+            </section>
+          `).join("")}
+
+          <section class="article-section article-action-box">
+            <h2>What to do next</h2>
+            <p>
+              Pick one idea from this guide and test it today. Do not collect advice like digital furniture.
+              Use one tool, finish one task, then improve the workflow.
+            </p>
+            <a class="btn btn-primary" href="tools.html">Explore related tools</a>
+          </section>
         </div>
-        <div class="detail-actions">
-          <a class="btn btn-primary" href="tools.html">Explore tools</a>
-          <a class="btn btn-secondary" href="guides.html">Back to guides</a>
-        </div>
-      </aside>
-    </div>
+
+        <aside class="article-aside">
+          <div class="info-stack">
+            <div class="info-box">
+              <h3>Guide type</h3>
+              <p>${guide.tag}</p>
+            </div>
+
+            <div class="info-box">
+              <h3>Best for</h3>
+              <p>Beginners who want practical steps instead of confusing hype.</p>
+            </div>
+
+            <div class="info-box verdict-box">
+              <h3>ToolNova note</h3>
+              <p>Use AI tools as helpers, not as a replacement for thinking, taste, or responsibility.</p>
+            </div>
+
+            <div class="info-box">
+              <h3>Useful pages</h3>
+              <p><a class="text-link" href="tools.html">Tools directory</a></p>
+              <p><a class="text-link" href="calculators.html">Free calculators</a></p>
+              <p><a class="text-link" href="contact.html">Request help</a></p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </article>
   `;
 }
 

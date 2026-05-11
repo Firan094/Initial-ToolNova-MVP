@@ -1094,3 +1094,97 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Patch 24: Guide article depth polish */
+.article-detail-shell {
+  width: 100%;
+}
+
+.article-detail-hero {
+  margin-bottom: 1.4rem;
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 15% 0%, rgba(34, 211, 238, 0.11), transparent 30%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.article-detail-hero h1 {
+  margin-bottom: 0.8rem;
+}
+
+.article-detail-hero p {
+  max-width: 850px;
+}
+
+.article-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.article-meta-row span {
+  display: inline-flex;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.055);
+  color: var(--text-soft);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.article-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.article-main {
+  min-width: 0;
+}
+
+.article-summary-box,
+.article-section {
+  margin-bottom: 1rem;
+  padding: 1.15rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.article-summary-box h2,
+.article-section h2 {
+  margin-top: 0;
+}
+
+.article-summary-box p,
+.article-section p {
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.article-action-box {
+  border-color: rgba(34, 197, 94, 0.26);
+  background:
+    radial-gradient(circle at 90% 0%, rgba(34, 197, 94, 0.1), transparent 28%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.article-aside {
+  position: sticky;
+  top: 5.5rem;
+}
+
+@media (max-width: 980px) {
+  .article-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-aside {
+    position: static;
+  }
+}
