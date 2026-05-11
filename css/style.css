@@ -1188,3 +1188,76 @@ h1, h2, h3 {
     position: static;
   }
 }
+
+/* Patch 25: Homepage guided start section */
+.guided-start-section {
+  position: relative;
+}
+
+.guided-start-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.guided-start-card {
+  display: block;
+  min-height: 210px;
+  padding: 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 15% 0%, rgba(34, 211, 238, 0.08), transparent 34%),
+    rgba(255, 255, 255, 0.035);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.guided-start-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34, 211, 238, 0.34);
+}
+
+.start-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  margin-bottom: 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  background: rgba(34, 211, 238, 0.08);
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.guided-start-card h3 {
+  margin: 0 0 0.55rem;
+  color: var(--text);
+}
+
+.guided-start-card p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+.guided-start-card-soft {
+  border-color: rgba(34, 197, 94, 0.24);
+  background:
+    radial-gradient(circle at 85% 0%, rgba(34, 197, 94, 0.1), transparent 32%),
+    rgba(255, 255, 255, 0.035);
+}
+
+@media (max-width: 900px) {
+  .guided-start-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guided-start-card {
+    min-height: auto;
+  }
+}
