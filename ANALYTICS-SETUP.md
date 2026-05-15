@@ -1,8 +1,8 @@
-# ToolNova Analytics Setup
+# PickBetterTools Analytics Setup
 
 Current live URL:
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Recommended first analytics option
 
@@ -19,7 +19,7 @@ Reason:
 
 1. Open Cloudflare dashboard.
 2. Go to Workers & Pages.
-3. Select the ToolNova Pages project.
+3. Select the PickBetterTools Pages project.
 4. Go to Metrics.
 5. Find Web Analytics.
 6. Click Enable.

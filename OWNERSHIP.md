@@ -1,11 +1,11 @@
-# ToolNova Ownership Record
+# PickBetterTools Ownership Record
 
-Project name: ToolNova  
+Project name: PickBetterTools  
 Project type: AI tools directory, guide hub, calculator site, and service lead funnel.
 
 Temporary live URL:
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 Repository:
 
@@ -13,7 +13,7 @@ Private GitHub repository under Firan094.
 
 ## Ownership note
 
-ToolNova was created as an original web project with custom structure, branding direction, content organization, UI layout, and deployment workflow.
+PickBetterTools was created as an original web project with custom structure, branding direction, content organization, UI layout, and deployment workflow.
 
 The project includes:
 
@@ -34,13 +34,13 @@ Do not share the GitHub repository link publicly.
 
 Only share the public website link:
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Copyright notice
 
-© 2026 ToolNova. All rights reserved.
+© 2026 PickBetterTools. All rights reserved.
 
-ToolNova branding, written content, structure, and original page organization should not be copied, republished, or reused without permission.
+PickBetterTools branding, written content, structure, and original page organization should not be copied, republished, or reused without permission.
 
 ## Future proof
 

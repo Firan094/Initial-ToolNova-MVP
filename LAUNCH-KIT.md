@@ -1,54 +1,54 @@
-# ToolNova Launch Kit
+# PickBetterTools Launch Kit
 
 Temporary live URL:
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Main launch message
 
-ToolNova is live.
+PickBetterTools is live.
 
 It is a practical platform for discovering useful AI tools, digital skills, free calculators, and smarter ways to work online.
 
 Built for students, freelancers, creators, small business owners, and anyone trying to work smarter without drowning in AI noise.
 
 Explore it here:
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Short social post 1
 
-I just launched ToolNova — a simple platform to discover practical AI tools, guides, and calculators for smarter online work.
+I just launched PickBetterTools — a simple platform to discover practical AI tools, guides, and calculators for smarter online work.
 
 No hype. No fake promises. Just useful tools.
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Short social post 2
 
 Looking for AI tools for studying, freelancing, content creation, business, or coding?
 
-I built ToolNova to organize useful tools and guides in one place.
+I built PickBetterTools to organize useful tools and guides in one place.
 
 Try it:
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Short social post 3
 
 Most AI tool websites are noisy.
 
-ToolNova is built to be simple:
+PickBetterTools is built to be simple:
 - useful tools
 - practical guides
 - free calculators
 - clear recommendations
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Telegram post
 
-🚀 ToolNova is live.
+🚀 PickBetterTools is live.
 
-ToolNova helps you discover useful AI tools, digital skills, free calculators, and practical guides for online work.
+PickBetterTools helps you discover useful AI tools, digital skills, free calculators, and practical guides for online work.
 
 Best for:
 - students
@@ -58,7 +58,7 @@ Best for:
 - beginners learning online work
 
 Visit:
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Facebook group value post
 
@@ -71,13 +71,13 @@ It includes:
 - calculators for freelance income, website cost, and AI subscriptions
 
 You can check it here:
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 Feedback is welcome.
 
 ## LinkedIn-style post
 
-I recently launched ToolNova, a practical discovery platform for AI tools, digital skills, and smarter online work.
+I recently launched PickBetterTools, a practical discovery platform for AI tools, digital skills, and smarter online work.
 
 The goal is simple: help people choose useful tools faster and avoid wasting time on random AI hype.
 
@@ -89,7 +89,7 @@ Current features:
 - service/contact funnel
 
 Live site:
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## TikTok / Shorts script 1
 
@@ -97,12 +97,12 @@ Hook:
 Stop wasting time searching random AI tools.
 
 Body:
-I built ToolNova — a simple website that organizes useful AI tools for students, freelancers, creators, and business owners.
+I built PickBetterTools — a simple website that organizes useful AI tools for students, freelancers, creators, and business owners.
 
 You can search tools by category, pricing, and use case.
 
 CTA:
-Check it out at toolnova.pages.dev
+Check it out at PickBetterTools.pages.dev
 
 ## TikTok / Shorts script 2
 
@@ -115,7 +115,7 @@ This site collects useful AI tools, guides, and calculators to help you work sma
 It has tools for writing, design, coding, video creation, business, and productivity.
 
 CTA:
-Visit ToolNova — link: https://toolnova.pages.dev/
+Visit PickBetterTools — link: https://PickBetterTools.pages.dev/
 
 ## TikTok / Shorts script 3
 
@@ -123,22 +123,22 @@ Hook:
 Not every AI tool is worth your time.
 
 Body:
-ToolNova helps you find practical tools and understand what each one is best for.
+PickBetterTools helps you find practical tools and understand what each one is best for.
 
 No fake income promises. Just tools, guides, and useful workflows.
 
 CTA:
-Try it: toolnova.pages.dev
+Try it: PickBetterTools.pages.dev
 
 ## Direct message to friends
 
-Hey, I launched a new project called ToolNova.
+Hey, I launched a new project called PickBetterTools.
 
 It is a website for discovering useful AI tools, guides, and calculators for students, freelancers, creators, and online work.
 
 Can you check it and tell me what you think?
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 ## Feedback questions to ask users
 
@@ -188,7 +188,7 @@ Better:
 
 ## Private beta sharing rule
 
-During early testing, share ToolNova only with trusted people first.
+During early testing, share PickBetterTools only with trusted people first.
 
 Message rule:
 
@@ -203,4 +203,4 @@ Do not share:
 
 Share only:
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/

@@ -1,6 +1,6 @@
-# ToolNova MVP
+# PickBetterTools MVP
 
-ToolNova is a static AI tools directory, guide hub, calculator site, and service lead funnel.
+PickBetterTools is a static AI tools directory, guide hub, calculator site, and service lead funnel.
 
 ## Current status
 
@@ -14,7 +14,7 @@ ToolNova is a static AI tools directory, guide hub, calculator site, and service
 ## File structure
 
 ```txt
-toolnova-mvp/
+PickBetterTools-mvp/
 ├─ index.html
 ├─ tools.html
 ├─ tool.html
@@ -40,10 +40,10 @@ toolnova-mvp/
 
    ## Ownership and repository rule
 
-This repository contains the ToolNova project source code and should remain private during the early launch phase.
+This repository contains the PickBetterTools project source code and should remain private during the early launch phase.
 
 Public sharing link:
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 Do not share the GitHub repository link publicly.

@@ -1,8 +1,8 @@
-# ToolNova Google Search Console Setup
+# PickBetterTools Google Search Console Setup
 
 Current temporary URL:
 
-https://toolnova.pages.dev/
+https://PickBetterTools.pages.dev/
 
 Recommended setup after real domain purchase:
 

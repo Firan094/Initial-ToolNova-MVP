@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toolnova.pages.dev/sitemap.xml
+Sitemap: https://PickBetterTools.pages.dev/sitemap.xml

@@ -97,7 +97,7 @@ function toolCard(tool) {
           <strong>${pricingNote}</strong>
         </div>
         <div>
-          <span>ToolNova verdict</span>
+          <span>PickBetterTools verdict</span>
           <strong>${trustNote}</strong>
         </div>
       </div>
@@ -250,8 +250,8 @@ function renderToolDetail() {
     "Keep it only if it saves time, improves quality, or reduces stress."
   ];
   setPageSeo({
-    title: `${tool.name} Review — ToolNova`,
-    description: `${tool.name} review: best for ${tool.bestFor}. See pricing notes, pros, cons, quick workflow, and ToolNova verdict.`,
+    title: `${tool.name} Review — PickBetterTools`,
+    description: `${tool.name} review: best for ${tool.bestFor}. See pricing notes, pros, cons, quick workflow, and PickBetterTools verdict.`,
     url: window.location.href
   });
   
@@ -326,7 +326,7 @@ function renderToolDetail() {
           </div>
 
           <div class="info-box verdict-box">
-            <h3>ToolNova verdict</h3>
+            <h3>PickBetterTools verdict</h3>
             <p>${trustVerdict}</p>
           </div>
 
@@ -360,7 +360,7 @@ function renderArticleDetail() {
   const readingMinutes = Math.max(3, Math.ceil((guide.sections.length * 120) / 200));
 
   setPageSeo({
-    title: `${guide.title} — ToolNova Guide`,
+    title: `${guide.title} — PickBetterTools Guide`,
     description: guide.description,
     url: window.location.href
   });
@@ -416,7 +416,7 @@ function renderArticleDetail() {
             </div>
 
             <div class="info-box verdict-box">
-              <h3>ToolNova note</h3>
+              <h3>PickBetterTools note</h3>
               <p>Use AI tools as helpers, not as a replacement for thinking, taste, or responsibility.</p>
             </div>
 

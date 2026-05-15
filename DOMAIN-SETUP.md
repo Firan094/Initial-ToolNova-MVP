@@ -1,8 +1,8 @@
-# ToolNova Domain Setup Map
+# PickBetterTools Domain Setup Map
 
 Current temporary URL:
 
-https://toolnova.pages.dev
+https://PickBetterTools.pages.dev
 
 When the real domain is purchased, replace the temporary Cloudflare Pages URL with the real domain.
 
