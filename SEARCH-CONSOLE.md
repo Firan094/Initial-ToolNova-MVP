@@ -2,7 +2,7 @@
 
 Current temporary URL:
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 Recommended setup after real domain purchase:
 

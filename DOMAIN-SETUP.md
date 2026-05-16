@@ -2,7 +2,7 @@
 
 Current temporary URL:
 
-https://PickBetterTools.pages.dev
+https://pickbettertools.com
 
 When the real domain is purchased, replace the temporary Cloudflare Pages URL with the real domain.
 

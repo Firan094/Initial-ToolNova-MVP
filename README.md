@@ -44,6 +44,6 @@ This repository contains the PickBetterTools project source code and should rema
 
 Public sharing link:
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 Do not share the GitHub repository link publicly.

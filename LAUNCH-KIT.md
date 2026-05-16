@@ -2,7 +2,7 @@
 
 Temporary live URL:
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Main launch message
 
@@ -13,7 +13,7 @@ It is a practical platform for discovering useful AI tools, digital skills, free
 Built for students, freelancers, creators, small business owners, and anyone trying to work smarter without drowning in AI noise.
 
 Explore it here:
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Short social post 1
 
@@ -21,7 +21,7 @@ I just launched PickBetterTools — a simple platform to discover practical AI t
 
 No hype. No fake promises. Just useful tools.
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Short social post 2
 
@@ -30,7 +30,7 @@ Looking for AI tools for studying, freelancing, content creation, business, or c
 I built PickBetterTools to organize useful tools and guides in one place.
 
 Try it:
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Short social post 3
 
@@ -42,7 +42,7 @@ PickBetterTools is built to be simple:
 - free calculators
 - clear recommendations
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Telegram post
 
@@ -58,7 +58,7 @@ Best for:
 - beginners learning online work
 
 Visit:
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Facebook group value post
 
@@ -71,7 +71,7 @@ It includes:
 - calculators for freelance income, website cost, and AI subscriptions
 
 You can check it here:
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 Feedback is welcome.
 
@@ -89,7 +89,7 @@ Current features:
 - service/contact funnel
 
 Live site:
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## TikTok / Shorts script 1
 
@@ -102,7 +102,7 @@ I built PickBetterTools — a simple website that organizes useful AI tools for 
 You can search tools by category, pricing, and use case.
 
 CTA:
-Check it out at PickBetterTools.pages.dev
+Check it out at pickbettertools.com
 
 ## TikTok / Shorts script 2
 
@@ -115,7 +115,7 @@ This site collects useful AI tools, guides, and calculators to help you work sma
 It has tools for writing, design, coding, video creation, business, and productivity.
 
 CTA:
-Visit PickBetterTools — link: https://PickBetterTools.pages.dev/
+Visit PickBetterTools — link: https://pickbettertools.com/
 
 ## TikTok / Shorts script 3
 
@@ -128,7 +128,7 @@ PickBetterTools helps you find practical tools and understand what each one is b
 No fake income promises. Just tools, guides, and useful workflows.
 
 CTA:
-Try it: PickBetterTools.pages.dev
+Try it: pickbettertools.com
 
 ## Direct message to friends
 
@@ -138,7 +138,7 @@ It is a website for discovering useful AI tools, guides, and calculators for stu
 
 Can you check it and tell me what you think?
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Feedback questions to ask users
 
@@ -203,4 +203,4 @@ Do not share:
 
 Share only:
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/

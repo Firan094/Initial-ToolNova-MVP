@@ -2,7 +2,7 @@
 
 Current live URL:
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Recommended first analytics option
 

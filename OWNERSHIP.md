@@ -5,7 +5,7 @@ Project type: AI tools directory, guide hub, calculator site, and service lead f
 
 Temporary live URL:
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 Repository:
 
@@ -34,7 +34,7 @@ Do not share the GitHub repository link publicly.
 
 Only share the public website link:
 
-https://PickBetterTools.pages.dev/
+https://pickbettertools.com/
 
 ## Copyright notice
 
