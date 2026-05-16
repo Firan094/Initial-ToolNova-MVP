@@ -97,7 +97,7 @@ function toolCard(tool) {
           <strong>${pricingNote}</strong>
         </div>
         <div>
-          <span>PickBetterTools verdict</span>
+          <span>OUR VERDICT</span>
           <strong>${trustNote}</strong>
         </div>
       </div>
@@ -251,7 +251,7 @@ function renderToolDetail() {
   ];
   setPageSeo({
     title: `${tool.name} Review — PickBetterTools`,
-    description: `${tool.name} review: best for ${tool.bestFor}. See pricing notes, pros, cons, quick workflow, and PickBetterTools verdict.`,
+    description: `${tool.name} review: best for ${tool.bestFor}. See pricing notes, pros, cons, quick workflow, and OUR VERDICT.`,
     url: window.location.href
   });
   
@@ -326,7 +326,7 @@ function renderToolDetail() {
           </div>
 
           <div class="info-box verdict-box">
-            <h3>PickBetterTools verdict</h3>
+            <h3>OUR VERDICT</h3>
             <p>${trustVerdict}</p>
           </div>
 
